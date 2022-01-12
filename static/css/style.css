@@ -1,0 +1,213 @@
+body {
+	background-image: url("../media/images/table/table.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+	color: #b48608;
+	font-family: "Droid serif", serif;
+	font-size: 50px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 44px;
+	margin: 0 0 12px;
+	text-align: center;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, min-content);
+
+	width: 100vw;
+}
+
+.title {
+	grid-column: 1 / -1;
+	grid-row: 1 / 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.scoreTable {
+	grid-column: 1 / -1;
+	grid-row: 2 / 3;
+	text-align: center;
+    border-bottom: .5rem solid #b48608;
+    border-top: .5rem solid #b48608;
+	border-collapse: collapse;
+}
+
+.mainTableButtons {
+	grid-column: 1 / -1;
+	grid-row: 4 / 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mainTableButtons > * {
+	align-items: center;
+	background-clip: padding-box;
+	border: .0625rem solid transparent;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0 .0625rem .1875rem 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+		Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 0 5px;
+	min-height: 48px;
+	padding: calc(14px - .0625rem) calc(24px - .0625rem);
+	position: relative;
+	text-decoration: none;
+	transition: all 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	width: auto;
+}
+table {
+	table-layout: fixed;
+	width: 100%;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 800;
+	line-height: 2.25rem;
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+td {
+	width: 25%;
+}
+
+.hitBtn{
+    background-color: #246BCE;
+}
+.hitBtn:hover,
+.hitBtn:focus {
+	background-color: rgb(57, 124, 219);
+	box-shadow: rgba(0, 0, 0, 0.1) 0 .25rem .75rem;
+}
+
+.hitBtn:hover {
+	transform: translateY(-0.0625rem);
+}
+
+.hitBtn:active {
+	background-color: rgb(28, 79, 151);
+	box-shadow: rgba(0, 0, 0, 0.06) 0 .125rem .25rem;
+	transform: translateY(0);
+}
+.standBtn{
+    background-color: #FFBA00;
+}
+.standBtn:hover,
+.standBtn:focus {
+	background-color: #ffd257;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 .25rem .75rem;
+}
+
+.standBtn:hover {
+	transform: translateY(-0.0625rem);
+}
+
+.standBtn:active {
+	background-color: #a37800;
+	box-shadow: rgba(0, 0, 0, 0.06) 0 .125rem .25rem;
+	transform: translateY(0);
+}
+.dealBtn{
+    background-color: #C40233;
+}
+.dealBtn:hover,
+.dealBtn:focus {
+	background-color: #ff386a;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 .25rem .75rem;
+}
+
+.dealBtn:hover {
+	transform: translateY(-0.0625rem);
+}
+
+.dealBtn:active {
+	background-color: #800020;
+	box-shadow: rgba(0, 0, 0, 0.06) 0 .125rem .25rem;
+	transform: translateY(0);
+}
+
+.mainTable{
+    grid-column: 1 / -1;
+	grid-row: 3 / 4;
+
+    min-height: 75vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: repeat(3,min-content);
+}
+
+.resultText{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    width: 100%;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 800;
+	line-height: 2.25rem;
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+
+.yourCurrentTotal {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    width: 100%;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 800;
+	line-height: 2.25rem;
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+
+.dealerCurrentTotal {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+
+    width: 100%;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 800;
+	line-height: 2.25rem;
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+.yourCardsContainer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.dealerCardsContainer {
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+}
+
+.yourCardsContainer > *, .dealerCardsContainer > * {
+    width: 10vw;
+    margin: 0 .2rem;
+}

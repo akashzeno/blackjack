@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="static/css/style.css" />
+		<script src="static/js/script.js" defer></script>
+		<title>Blackjack</title>
+	</head>
+	<body>
+		<div class="table">
+			<h1 class="title">BlackJack</h1>
+			<table class="scoreTable">
+				<thead>
+					<tr>
+						<th>Win</th>
+						<th>Draw</th>
+						<th>Losses</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="win">0</td>
+						<td class="draw">0</td>
+						<td class="losses">0</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="mainTable">
+                <div class="resultText">Let's Play</div>
+                <div class="yourCurrentTotal">You: 0</div>
+                <div class="dealerCurrentTotal">Dealer: 0</div>
+                <div class="yourCardsContainer"></div>
+                <div class="dealerCardsContainer"></div>
+            </div>
+			<div class="mainTableButtons">
+				<button class="hitBtn">Hit</button>
+				<button class="standBtn">Stand</button>
+				<button class="dealBtn">Deal</button>
+			</div>
+		</div>
+	</body>
+</html>
