@@ -58,26 +58,6 @@ Here's what the selected code is doing:
 6. Create an image element and set its src to the card image.
 7. Append the image element to the player's cards element.
 8. If the player is the dealer, add the card number to the dealer's total.
-
-# **Step 7: Create the Dealer's Turn Function**
-#
-# The dealer's turn function is similar to the player's turn function. The only difference is that the dealer has to hit if their total is less than 17.
-#
-# Here's the code:
-#
-# ```javascript
-# function dealerTurn() {
-# if (dealer < 17) {
-# let img = generateCards("dealer");
-# dealerCards.appendChild(img);
-# } else {
-# dealerStand();
-# }
-# }
-# ```
-#
-# Here's what the code is doing:
-# 1. If the dealer
 */
 function generateCards(player) {
 	let randNum = randomNumber();
